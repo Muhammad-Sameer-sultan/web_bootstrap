@@ -13,15 +13,15 @@
 <body>
   <!-- navbar -->
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="light">
+  <nav class="navbar navbar-expand-lg bg-body-secondary " data-bs-theme="light">
     <div class="container-fluid ">
-      <a class="navbar-brand logo text-danger fw-bolder" href="#" ">TechCode Blog</a>
+      <a class="navbar-brand logo text-danger fw-bolder fs-2" href="#" >TechCode Blog</a>
       <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-lg-0 fs-5">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
@@ -47,13 +47,13 @@
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
-          <form class="d-flex m-2"  role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <form class="d-flex m-2" role="search">
+            <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-dark" type="submit">Search</button>
           </form>
           <div class=" my-2">
             <button class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</button>
-            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#signupModal">Sign UP</button>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
           </div>
         </div>
     </div>
@@ -65,7 +65,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="loginModalLabel">Sign</h1>
+          <h1 class="modal-title fs-5" id="loginModalLabel">SIGN IN</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -73,34 +73,46 @@
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
-          <div class="mb-3 row">
-            <label for="exampleFormControlInput1" class="form-label"">Password</label>
-          <div class=" col-sm-10">
-              <input type="password" class="form-control" id="inputPassword">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your password">
+            <small><a href="#" class="text-decoration-underline  text-danger">Forget Password</a></small>
           </div>
+        
+            
         </div>
-        <button class="btn btn-info">Submit</button>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign In</button>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-  <!-- sign upmodal -->
+  <!-- sign up modal -->
   <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="signupModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="signupModalLabel">SIGN UP</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your password">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Confirm Your password">
+          </div>
+
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign Up</button>
+
         </div>
       </div>
     </div>
@@ -281,7 +293,7 @@
             <div class="d-flex justify-content-between align-items-center">
               <a href="#">Read more...</a>
               <small class="text-body-secondary">By A. Tarantola, 8 hours ago</small>
-              
+
             </div>
           </div>
         </div>
@@ -331,7 +343,7 @@
 
       <div class="col">
         <div class="card shadow-sm flex-lg-row mt-3 ">
-          <img src="images/news6.jpg"class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
+          <img src="images/news6.jpg" class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
           <div class="card-body d-flex justify-content-evenly flex-column">
             <h4>Mark Zuckerberg says generative AI is coming to ‘every single one of our products’</h4>
             <p class="card-text">Mark Zuckerberg says generative AI is coming to ‘every single one of our products’.</p>
@@ -345,7 +357,7 @@
 
       <div class="col">
         <div class="card shadow-sm flex-lg-row mt-3 ">
-          <img src="images/news7.jpg"class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
+          <img src="images/news7.jpg" class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
           <div class="card-body d-flex justify-content-evenly flex-column">
             <h4>Reddit communities to go private on Monday</h4>
             <p class="card-text">More than 1,000 subreddits will be inaccessible for 48 hours to protest changes.</p>
@@ -359,10 +371,11 @@
 
       <div class="col">
         <div class="card shadow-sm flex-lg-row mt-3 ">
-          <img src="images/news8.jpg"class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
+          <img src="images/news8.jpg" class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
           <div class="card-body d-flex justify-content-evenly flex-column">
             <h4>Chinese censors take aim at AirDrop and Bluetooth</h4>
-            <p class="card-text">Authorities are relentlessly plugging the "cracks" in China's Great Firewall to quench dissent..</p>
+            <p class="card-text">Authorities are relentlessly plugging the "cracks" in China's Great Firewall to quench
+              dissent..</p>
             <div class="d-flex justify-content-between align-items-center">
               <a href="#">Read more...</a>
               <small class="text-body-secondary">By M. Smith, 9 hours ago</small>
@@ -373,7 +386,7 @@
 
       <div class="col">
         <div class="card shadow-sm flex-lg-row mt-3 ">
-          <img src="images/news9.jpg"class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
+          <img src="images/news9.jpg" class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
           <div class="card-body d-flex justify-content-evenly flex-column">
             <h4>Twitch scraps ad changes after streamers leave</h4>
             <p class="card-text">
@@ -388,11 +401,12 @@
 
       <div class="col">
         <div class="card shadow-sm flex-lg-row mt-3 ">
-          <img src="images/news10.jpg"class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
+          <img src="images/news10.jpg" class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
           <div class="card-body d-flex justify-content-evenly flex-column">
             <h4>Warning firms may use brain data to watch workers
             </h4>
-            <p class="card-text">The data watchdog examined a range of potential future uses of “neurotech” in a new report..</p>
+            <p class="card-text">The data watchdog examined a range of potential future uses of “neurotech” in a new
+              report..</p>
             <div class="d-flex justify-content-between align-items-center">
               <a href="#">Read more...</a>
               <small class="text-body-secondary">By M. DOe, 22 hours ago</small>
@@ -403,11 +417,12 @@
 
       <div class="col">
         <div class="card shadow-sm flex-lg-row mt-3 ">
-          <img src="images/news11.jpg"class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
+          <img src="images/news11.jpg" class="bd-placeholder-img card-img-top" width="50px" height="225" alt="">
           <div class="card-body d-flex justify-content-evenly flex-column">
             <h4>Russian hackers behind cyber-attack on council</h4>
             <p class="card-text">
-              Gloucester City Council concludes its investigation into the "sophisticated" attack on IT systems in 2021..</p>
+              Gloucester City Council concludes its investigation into the "sophisticated" attack on IT systems in
+              2021..</p>
             <div class="d-flex justify-content-between align-items-center">
               <a href="#">Read more...</a>
               <small class="text-body-secondary">By M. Smith, 2 hours ago</small>
@@ -434,11 +449,11 @@
             <li>
               <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                 href="#">
-                
+
                 <img src="images/side1.jpg" class="bd-placeholder-img" width="100%" height="96" alt="">
                 <div class="col-lg-8">
                   <h6 class="mb-0">Twitter to pay verified creators for ads in replies, Musk says
-                    </h6>
+                  </h6>
                   <small class="text-body-secondary">REUTERS | UPDATED 7 HOURS AGO</small>
                 </div>
               </a>
@@ -446,11 +461,11 @@
             <li>
               <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                 href="#">
-                
+
                 <img src="images/side.2.jpg" class="bd-placeholder-img" width="100%" height="96" alt="">
                 <div class="col-lg-8">
                   <h6 class="mb-0">Tips to enhance your Adobe PDF Reader experience
-                    </h6>
+                  </h6>
                   <small class="text-body-secondary">TECH DESK | UPDATED JUN 05, 2023</small>
                 </div>
               </a>
@@ -458,11 +473,11 @@
             <li>
               <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                 href="#">
-                
+
                 <img src="images/side3.jpg" class="bd-placeholder-img" width="100%" height="96" alt="">
                 <div class="col-lg-8">
                   <h6 class="mb-0">Sucralose found in sweetener can damage DNA
-                    </h6>
+                  </h6>
                   <small class="text-body-secondary">TECH DESK | UPDATED JUN 06, 2023</small>
                 </div>
               </a>
@@ -499,68 +514,66 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Aside END -->
   <!-- <footer> -->
-    <div class="container">
-      <footer class="py-5">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
+  <footer class="p-4 mt-4 bg-dark text-light">
+
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Socail</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Linktedin</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Facebook</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Instagram</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Tiktok</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Services</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Technology</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Features</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Posts</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Activity</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Get Info</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Check Availability</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
           </div>
-    
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-md-5 offset-md-1 mb-3">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
-    
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-          <p>© 2023 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-          </ul>
-        </div>
-      </footer>
+        </form>
+      </div>
     </div>
+
+
+    <div class=" py-4  border-top">
+      <p class="text-center">© 2023 Company, Inc. All rights reserved.</p>
+
+    </div>
+
+  </footer>
+
   <!-- </footer> -->
 
 
